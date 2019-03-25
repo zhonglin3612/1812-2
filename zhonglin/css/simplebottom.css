@@ -1,0 +1,39 @@
+/* success-footer
+--------------------------------- */
+.success-footer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.success-footer p {
+    color: #666;
+}
+
+.success-footer p span {
+    margin: 0 4px;
+    color: #999;
+}
+
+.success-footer .copyright {
+    margin-top: 10px;
+    color: #999;
+}
+
+.beian {
+    display: inline-block;
+    width: 200px;
+}
+
+.beian img {
+    float: left;
+}
+
+.beian p {
+    margin: 0px 0px 0px 5px;
+    color: #606060;
+}
+
+.beian span {
+    margin: 0;
+    padding: 0;
+}
