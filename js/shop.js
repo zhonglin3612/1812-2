@@ -165,6 +165,24 @@ $(function () {
 
             })
             //数量
+
+
+            $('.item_amount').on('blur', function () {
+                var n = $(this).parent().find('.item_amount').val()
+
+                $(this).parent().find('.item_amount').val(n * 1 - 1)
+                var newnum = $(this).parent().find('.item_amount').val();
+                //第几条数据
+                var index = $(this).parent().parent().index()
+                x();
+                $.ajax({
+                    type: "POST",
+                    url: "../api/add.php",
+                    data: "add=" + msg[index].id + "&num=" + newnum,
+                });
+
+            })
+
             $('.contype1_cont3').on('click', '.oper_goods', function () {
                 var n = $(this).parent().find('.item_amount').val()
                 if ($(this).attr('class') == 'oper_goods reduce_g' && n > 1) {
